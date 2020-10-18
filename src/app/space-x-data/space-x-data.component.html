@@ -1,0 +1,58 @@
+<div class="container">
+    <h4>SpaceX Launch Programs</h4>
+    <div class="row no-gutters">
+        <div class="col-md-3 col-xs-12 col-sm-12 col-lg-2 col-xl-2 card-wrapper sticky-card">
+            <div class="card-label">Filters <span class="reset-btn" (click)="resetFilter()">Reset</span></div>
+            <div class="card-heading">Launch Year</div>
+            <div class="row no-gutters">
+                <div *ngFor="let year of yearList">
+                    <div class="col">
+                        <div class="green-box" [ngClass]="{'active' : launchYear == year}" (click)="select(year,'year')">{{year}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-heading">Successful Launch</div>
+            <div class="row no-gutters">
+                <div *ngFor="let val of successList">
+                    <div class="col">
+                        <div class="green-box" [ngClass]="{'active' : successLaunch == val}" (click)="select(val,'launch')">{{val}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-heading">Successful Landing</div>
+            <div class="row no-gutters">
+                <div *ngFor="let val of successList">
+                    <div class="col">
+                        <div class="green-box" [ngClass]="{'active' : successLand == val}" (click)="select(val,'land')">{{val}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-xs-12 col-sm-12 col-lg-9 col-xl-9">
+            <div class="row no-gutters" *ngIf="spaceXData?.length">
+                <div *ngFor="let item of spaceXData" class="col-md-3">
+                    <div class="card-wrapper">
+                        <img [src]="item.links.mission_patch"  class="card-img"/>
+                        <div class="space-name">{{item.mission_name}} #{{item.flight_number}}</div>
+                        <div *ngIf="item.mission_id?.length">
+                            <div class="card-label">Mission Ids</div>
+                            <div *ngFor="let id of item.mission_id">
+                                <li>{{id}}</li> 
+                             </div>
+                        </div>
+                        <div class="card-label">Launch Year : <span>{{item.launch_year}}</span></div>
+                        <div class="card-label">Successful Launch : <span>{{item.launch_success}}</span></div>
+                        <div class="card-label">Successful Land : <span>{{item.launch_landing}}</span></div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="spaceXData == ''" class="no-data">
+                No Data Available
+            </div>
+            <div *ngIf="!spaceXData" class="no-data">
+                Loading ...
+            </div>
+        </div>
+    </div>
+</div>
+
