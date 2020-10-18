@@ -38,6 +38,7 @@ export class SpaceXDataComponent implements OnInit {
     this.launchYear = '';
     this.successLand = '';
     this.successLaunch = '';
+    this.spaceXData = [];
     this.getSpaceXData('');
   }
   getSpaceXData(path){

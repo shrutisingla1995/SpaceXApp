@@ -28,9 +28,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8 col-xs-12 col-sm-12 col-lg-9 col-xl-9">
+        <div class="col-md-9 col-xs-12 col-sm-12 col-lg-9 col-xl-9">
             <div class="row no-gutters" *ngIf="spaceXData?.length">
-                <div *ngFor="let item of spaceXData" class="col-md-3">
+                <div *ngFor="let item of spaceXData" class="col-md-3 col-xs-12 col-sm-12 col-lg-3 col-xl-3">
                     <div class="card-wrapper">
                         <img [src]="item.links.mission_patch"  class="card-img"/>
                         <div class="space-name">{{item.mission_name}} #{{item.flight_number}}</div>
