@@ -4,7 +4,7 @@ import { SpaceXDataService } from './space-x-data.service';
 @Component({
   selector: 'app-space-x-data',
   templateUrl: './space-x-data.component.html',
-  styleUrls: ['./space-x-data.component.css']
+  styleUrls: ['./space-x-data.component.scss']
 })
 export class SpaceXDataComponent implements OnInit {
   
