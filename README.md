@@ -4,6 +4,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 A sample application that displays all launches by SpaceX program.
 The spaceXdata filter service fetches the selected result for launches, landing and in which year that was happened. User is able to Filter the results with help of provided Filters which can be seen in left tile layout and other tiles shows the filtered results.
 
+# Demo
+![alt text](https://github.com/shrutisingla1995/SpaceXApp/blob/master/screencast.gif)
+![alt text](https://github.com/shrutisingla1995/SpaceXApp/blob/master/screenshot1.png?raw=true)
+![alt text](https://github.com/shrutisingla1995/SpaceXApp/blob/master/screenshot2.png?raw=true)
+
+
 # SRR Setup (Server side rendering)
 The server has delivered a completely static HTML page with all elements in pure SSR.
 1. `ng add @nguniversal/express-engine --clientProject SpaceXapp`
