@@ -5,9 +5,9 @@ A sample application that displays all launches by SpaceX program.
 The spaceXdata filter service fetches the selected result for launches, landing and in which year that was happened. User is able to Filter the results with help of provided Filters which can be seen in left tile layout and other tiles shows the filtered results.
 
 # Demo
-![alt text](https://github.com/shrutisingla1995/SpaceXApp/blob/master/screencast.gif)
-![alt text](https://github.com/shrutisingla1995/SpaceXApp/blob/master/screenshot1.png?raw=true)
-![alt text](https://github.com/shrutisingla1995/SpaceXApp/blob/master/screenshot2.png?raw=true)
+![Demo](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screencast.gif)
+![image](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screenshot1.PNG)
+![image](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screenshot2.PNG)
 
 
 # SRR Setup (Server side rendering)
