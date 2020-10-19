@@ -4,11 +4,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 A sample application that displays all launches by SpaceX program.
 The spaceXdata filter service fetches the selected result for launches, landing and in which year that was happened. User is able to Filter the results with help of provided Filters which can be seen in left tile layout and other tiles shows the filtered results.
 
+# Project Setup
+Run these commands:-
+
+1. git clone https://github.com/shrutisingla1995/SpaceXApp.git
+2. cd SpaceXApp
+3. npm install
+4. ng serve --aot
+
 # Demo
 ![Demo](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screencast.gif)
 ![image](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screenshot1.PNG)
 ![image](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screenshot2.PNG)
 
+# Responsive Layout
+	Mobile View: Page should have only one Column until 700 px. We have provided the Visual designs for Mobile screen.
+	Tablet View: Page should have 2 columns between 700 and 1024 px. Design is provided for Desktop tile and that should be followed for this viewport.
+	Desktop View: Page should have 4 columns between 1024 and 1440 px. Beyond 1440px viewport,  the content will be centered align with a max width of 1440.
+![Demo](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screencast2.gif)
 
 # SRR Setup (Server side rendering)
 The server has delivered a completely static HTML page with all elements in pure SSR.
