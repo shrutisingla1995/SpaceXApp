@@ -14,13 +14,18 @@ Run these commands:-
 
 # Demo
 ![Demo](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screencast.gif)
+
 ![image](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screenshot1.PNG)
+
 ![image](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screenshot2.PNG)
 
 # Responsive Layout
-	Mobile View: Page should have only one Column until 700 px. We have provided the Visual designs for Mobile screen.
-	Tablet View: Page should have 2 columns between 700 and 1024 px. Design is provided for Desktop tile and that should be followed for this viewport.
-	Desktop View: Page should have 4 columns between 1024 and 1440 px. Beyond 1440px viewport,  the content will be centered align with a max width of 1440.
+1.	Mobile View: Page should have only one Column until 700 px. We have provided the Visual designs for Mobile screen.
+
+2.	Tablet View: Page should have 2 columns between 700 and 1024 px. Design is provided for Desktop tile and that should be followed for this viewport.
+
+3. Desktop View: Page should have 4 columns between 1024 and 1440 px. Beyond 1440px viewport,  the content will be centered align with a max width of 1440.
+
 ![Demo](https://github.com/shrutisingla1995/SpaceXApp/blob/master/images/screencast2.gif)
 
 # SRR Setup (Server side rendering)
