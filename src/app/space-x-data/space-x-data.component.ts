@@ -25,14 +25,25 @@ export class SpaceXDataComponent implements OnInit {
   }
   select(data,type){
     if(type == 'launch'){
-      this.successLaunch = data;
+      if(this.successLaunch == data){
+        this.successLaunch = '';
+      }else{
+        this.successLaunch = data;
+      }
     }else if(type == 'land'){
-      this.successLand = data;
+      if(this.successLand == data){
+        this.successLand = '';
+      }else{
+        this.successLand = data;
+      }
     }else if(type == 'year'){
-      this.launchYear = data;
+      if(this.launchYear == data){
+        this.launchYear = '';
+      }else{
+        this.launchYear = data;
+      } 
     }
-    this.basePath = `&launch_year=${this.launchYear}&launch_success=${this.successLaunch}&land_success=${this.successLand}`;
-    this.getSpaceXData(this.basePath);
+    this.setPath();
   }
   resetFilter(){
     this.launchYear = '';
@@ -49,6 +60,20 @@ export class SpaceXDataComponent implements OnInit {
         this.isLoading = false;
       }
     })
+  }
+  setPath(){
+    let path1,path2,path3 = '';
+    if(this.launchYear){
+      path1 = `&launch_year=${this.launchYear}`
+    }
+    if(this.successLaunch){
+      path2 = `&launch_success=${this.successLaunch}`;
+    }
+    if(this.successLand){
+      path3 = `&land_success=${this.successLand}`;
+    }
+    this.basePath = (path1 ? path1 : '') + (path2 ? path2 : '') + (path3 ? path3 : '');
+    this.getSpaceXData(this.basePath);
   }
 
 }
